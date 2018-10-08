@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>My Prefect Wedding</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="jumbotron text-white" style="margin:0px;background-image: url('img/background_3.jpg');background-repeat: no-repeat;min-width:100%;height:auto">
+      <center>
+       <b><h1 class="text-white">Best Wedding Ever</h1></b>
+       <i><p class="text-white">This is wat we want you to say at the end!</p></i>
+     </center>
+   </div>
+    <center>
+    <div class="panel panel-default" style="width:80%;margin:10px;">
+      <div class="panel-body text-left">
+        <p>Create a account</p>
+        <p>Lorem ipsum dolor sit amet, erat impetus salutatus eos ut, adipisci similique in duo, viderer alienum duo ea. Saepe electram mea ea, ipsum omnium id nec. Consul iuvaret atomorum vel et, pri quodsi salutandi eu. Mea quod dolore no. In sonet conceptam disputationi vis.</p>
+      </div>
+      <div class="panel-footer" style="text-align: left;">
+        <form class="" action="#" method="post"style="text-align:left;">
+          <div class="form-group">
+            <label for="name">Name One</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter name one">
+            <label for="name">Name Two</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter name two">
+            <br>
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+            <br>
+            <label for="name">Page Title</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter page title">
+          </div>
+
+          <div class="form-group">
+              <label for="nameTextarea">Your page introduction</label>
+              <textarea class="form-control" id="nameTextarea" rows="15"></textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary" style="width:100%" onclick="document.getElementById('newpage_id').innerHTML = 'Page Code: ' + Math.floor((Math.random() * 999999))">Create Account</button>
+        </form>
+        <center><b><h1 id="newpage_id"></h1></b></center>
+      </div>
+
+      <br><br><br>
+
+      <div class="panel-body text-left">
+        <p>Already have a account?</p>
+        <p>Lorem ipsum dolor sit amet, erat impetus salutatus eos ut, adipisci similique in duo, viderer alienum duo ea. Saepe electram mea ea, ipsum omnium id nec. Consul iuvaret atomorum vel et, pri quodsi salutandi eu. Mea quod dolore no. In sonet conceptam disputationi vis.</p>
+      </div>
+      <div class="panel-footer" style="text-align: left;">
+        <form class="" action="#" method="post"style="text-align:left;">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </div>
+
+          <button type="button" class="btn btn-primary" style="width:100%">Login To Account</button>
+        </form>
+        <center><b><h1 id="newpage_id"></h1></b></center>
+      </div>
+    </div>
+  </center>
+
+  <br><br>
+
+  <div class="jumbotron text-white" style="margin:0px;background-image: url('img/background_3.jpg');background-repeat: no-repeat;min-width:100%;height:auto">
+    <center>
+     <b><h1 class="text-white">Go Back</h1></b>
+     <i><p class="text-white">Here you can go back to the main page.</p></i>
+     <button type="button" class="btn btn-success" onclick="location.href = 'index.html';">Go Back Now</button>
+   </center>
+  </div>
+  </body>
+</html>
