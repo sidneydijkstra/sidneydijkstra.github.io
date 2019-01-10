@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Prefect Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <script>
+    $(document).ready(function(){
+      $("#add_item_button").click(function(){
+        var _input = $("#item_textfield").val();
+        $("#todo_list").append("<li class='list-group-item'>" + _input + "<a class='float-right remove_item_button' style='margin:0px'>X</a></li>");
+
+        $("li").mouseenter(function(){ // on mouse enter
+          $(this).css("background-color", "#cccccc");
+        }).mouseleave(function(){ // on mouse leave
+          $(this).css("background-color", "#ffffff");
+        });
+
+        $(".remove_item_button").click(function(){
+          $(this).parent().remove();
+        }).mouseenter(function(){
+          $(this).css('cursor','pointer');
+        });
+      });
+    });
+  </script>
+
+  <div class="container">
+    <div class="jumbotron" style="margin-top:100px">
+      <h1>Todo list</h1>
+      <p>Use this list to show the task you have to do!</p>
+
+      <form class="form-inline">
+        <div class="form-group mb-2" style="margin-right:10px">
+          <input type="text" class="form-control" id="item_textfield" placeholder="Item..." style="width:300px">
+        </div>
+        <button type="button" class="btn btn-primary mb-2" id="add_item_button">Add item</button>
+      </form>
+
+      <ul class="list-group" id="todo_list">
+      </ul>
+
+    </div>
+  </div>
+
+  </body>
+</html>
